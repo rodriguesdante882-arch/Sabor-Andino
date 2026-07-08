@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Digital - Sabor Andino</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- BOTÓN CARRITO -->
+<div class="carrito-icono" onclick="mostrarCarrito()">
+
+    🛒
+
+    <span id="contadorCarrito">
+        0
+    </span>
+
+</div>
+
+
+<!-- VENTANA CARRITO -->
+
+<div id="carrito" class="carrito">
+
+    <h2>
+        Mi Carrito
+    </h2>
+
+
+    <div id="listaProductos">
+
+        <p>
+            Carrito vacío
+        </p>
+
+    </div>
+
+
+    <button onclick="cerrarCarrito()">
+        Cerrar
+    </button>
+
+</div>
+
+    <header>
+        <div class="contenedor">
+            <h1>Menú Digital</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="menu">
+        <div class="contenedor">
+
+            <h2>Entradas</h2>
+
+            <div class="item-menu">
+    <div class="producto-info">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfGu6xZQL7PS9v_TbbLOak-F5YnT138rN3xbqF-4-tQg&s=10">
+        
+    </div>
+    <br>
+    <br>
+    <span>Causa Limeña</span>
+    <span>S/ 18.00</span>
+    <button 
+    onclick="agregarCarrito('Lomo Saltado')">
+
+        🛒 Agregar
+
+    </button>
+</div>
+
+            <div class="item-menu">
+    <div class="producto-info">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNjAZpNp-VFg0NLDWTyTF3nbDUhY2Zpuen0DBTD_ydKw&s=10">
+        
+    </div>
+    <br>
+    <br>
+    <span>Papa a la Huancaína</span>
+    <span>S/ 16.00</span>
+    <button 
+    onclick="agregarCarrito('Lomo Saltado')">
+
+        🛒 Agregar
+
+    </button>
+</div>
+
+            <h2>Platos de Fondo</h2>
+
+            <div class="item-menu">
+    <div class="producto-info">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQznMuQEBxBQGl5X1ZJX8M8lcZNmuir3RMwdAkr1zPSiw&s=10">
+        
+    </div>
+    <br>
+    <br>
+    <span>Lomo Saltado</span>
+    <span>S/ 32.00</span>
+    <button 
+    onclick="agregarCarrito('Lomo Saltado')">
+
+        🛒 Agregar
+
+    </button>
+</div>
+
+            <div class="item-menu">
+    <div class="producto-info">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8ecjAeQQ8RITwM4u2sPstVDJ6tcr-xXpTrC98O5xn1A&s=10">
+        
+    </div>
+    <br>
+    <br>
+    <span>Ají de Gallina</span>
+    <span>S/ 28.00</span>
+    <button 
+    onclick="agregarCarrito('Lomo Saltado')">
+
+        🛒 Agregar
+
+    </button>
+</div>
+
+            <div class="item-menu">
+    <div class="producto-info">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOz3ZhHYYxLkBIDoST08GJGUL4yOoFqNFYRhMMrQ7foQ&s=10">
+        
+    </div>
+    <br>
+    <br>
+    <span>Arroz con Pollo</span>
+    <span>S/ 27.00</span>
+    <button 
+    onclick="agregarCarrito('Lomo Saltado')">
+
+        🛒 Agregar
+
+    </button>
+</div>
+
+            <div class="item-menu">
+    <div class="producto-info">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPEUVYDjZAf8evtIEcRD-Q_M-eTX9EZOFRfl4a3KXDGw&s=10">
+        
+    </div>
+    <br>
+    <br>
+    <span>Trucha Frita</span>
+    <span>S/ 35.00</span>
+    <button 
+    onclick="agregarCarrito('Lomo Saltado')">
+
+        🛒 Agregar
+
+    </button>
+</div>
+
+            <h2>Bebidas</h2>
+
+            <div class="item-menu">
+    <div class="producto-info">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRweLL5PrlnY_5Q7nnjzmTMwsJOm2GCTemW5RRtSrUWYw&s=10">
+        
+    </div>
+    <br>
+    <br>
+    <span>Chicha Morada</span>
+    <span>S/ 8.00</span>
+    <button 
+    onclick="agregarCarrito('Lomo Saltado')">
+
+        🛒 Agregar
+
+    </button>
+</div>
+
+            <div class="item-menu">
+    <div class="producto-info">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA7hFNjiH67ciqAnBh4TKyORX5EIqKzsyxKe6k1hM3cQ&s=10">
+        
+    </div>
+    <br>
+    <br>
+    <span>Maracuyá</span>
+    <span>S/ 8.00</span>
+    </button>
+    <button 
+    onclick="agregarCarrito('Lomo Saltado')">
+
+        🛒 Agregar
+
+    </button>
+</div>
+
+            <div class="item-menu">
+    <div class="producto-info">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Hdtilyz0svmbUl88JcZYIVYp-8IOsDhI2QK0FJlo3A&s=10" alt="Gaseosa">
+        
+    </div>
+    <br>
+    <br>
+    <span>Gaseosa</span>
+    <span>S/ 6.00</span>
+    </button>
+    <button 
+    onclick="agregarCarrito('Lomo Saltado')">
+
+        🛒 Agregar
+
+    </button>
+</div>
+            <H2>Postres</H2>
+            <div class="item-menu">
+            <div class="producto-info">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREe9kdrn0nwjn2280hXu4zeaMIlYqYNPqJdduqEnN_FQ&s=10" alt="Mazamorra Morada">
+        
+    </div>
+    <br>
+    <br>
+    <span>Mazamorra Morada</span>
+    <span>S/ 6.00</span>
+    </button>
+    <button 
+    onclick="agregarCarrito('Lomo Saltado')">
+
+        🛒 Agregar
+
+    </button>
+</div>
+           <div class="item-menu">
+            <div class="producto-info">
+        <img src="data:image/jpeg;base64,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" alt="Arroz Con Leche">
+        
+    </div>
+    <br>
+    <br>
+    <span>Arroz Con Leche</span>
+    <span>S/ 6.00</span>
+    </button>
+    <button 
+    onclick="agregarCarrito('Lomo Saltado')">
+
+        🛒 Agregar
+
+    </button>
+</div>
+    </section>
+
+    <footer>
+        <p>
+            © 2026 Restaurante Sabor Andino
+        </p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
